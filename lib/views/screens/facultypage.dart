@@ -211,8 +211,7 @@ class _FacultyPageState extends State<FacultyPage> {
       ),
     );
   }
-  Widget myContainer(
-      {required String title, required String image}) {
+  Widget myContainer({required String title, required String image}) {
     return Neumorphic(
       style: NeumorphicStyle(
         shape: NeumorphicShape.concave,
@@ -234,6 +233,7 @@ class _FacultyPageState extends State<FacultyPage> {
         margin: const EdgeInsets.only(left: 5,right: 5),
         padding: const EdgeInsets.all(15),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
               title,

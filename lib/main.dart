@@ -15,7 +15,7 @@ void main() async {
   Global.isVisited = prefs.getBool('isVisited') ?? false;
   Global.isLogged = prefs.getBool('isLogged') ?? false;
   Global.emailCheck = prefs.getString('email') ?? '';
-
+  
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
